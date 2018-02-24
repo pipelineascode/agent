@@ -7,7 +7,7 @@ pipeline {
         stage('Example') {
             steps {
                 sleep(time: 10, unit: 'SECONDS') 
-                echo 'Hello World'
+                echo 'Hello World 1'
             }
         }
     }
