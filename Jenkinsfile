@@ -1,7 +1,7 @@
 pipeline {
     agent any
     options {
-       overrideIndexTriggers(true) 
+       overrideIndexTriggers(false) 
     }
     stages {
         stage('Example') {
