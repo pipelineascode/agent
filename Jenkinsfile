@@ -1,13 +1,13 @@
 pipeline {
     agent any
-    options {
-       overrideIndexTriggers(true) 
-    }
+  options { 
+	skipDefaultCheckout() 
+	}
     stages {
         stage('Example') {
             steps {
                 sleep(time: 1, unit: 'SECONDS') 
-                echo 'Hello World 4'
+                echo 'Hello World'
             }
         }
     }
