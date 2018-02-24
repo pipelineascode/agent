@@ -1,11 +1,14 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('test run'){
-            steps{
-                    echo "test2"
+    options {
+       overrideIndexTriggers(true) 
+    }
+    stages {
+        stage('Example') {
+            steps {
+                sleep(time: 10, unit: 'SECONDS') 
+                echo 'Hello World'
             }
-            
         }
     }
 }
