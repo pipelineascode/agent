@@ -1,6 +1,6 @@
 pipeline {
     agent any
-	options { checkoutToSubdirectory('foo') }
+	options { checkoutToSubdirectory('z:\foo') }
     stages {
         stage('Example') {
             steps {                
