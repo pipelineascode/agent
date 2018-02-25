@@ -1,10 +1,9 @@
 pipeline {
     agent any
-	options { skipDefaultCheckout() }
+	options { checkoutToSubdirectory('foo') }
     stages {
         stage('Example') {
-            steps {
-                sleep(time: 1, unit: 'SECONDS') 
+            steps {                
                 echo 'Hello World 1'
             }
         }
